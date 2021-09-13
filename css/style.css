@@ -1,0 +1,165 @@
+/* ############## Fonts Style ################ */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Roboto&display=swap');
+
+
+body.darkMode{background: rgb(2,0,36);}
+body.splash{
+  background: radial-gradient(circle, rgba(2,0,36,0.7542367288712359) 31%, rgba(9,9,121,0.6337885495995272) 76%, rgba(113,167,250,0.6057773451177346) 92%);
+  /* background: white; */
+}
+
+.card-header{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+	font-weight: bold;
+}
+
+.card-body{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+div.row.image div[class^="col"]{
+	background-size: contain;
+	background-position: center center;
+  background-repeat: no-repeat;
+	height: 250px;
+}
+
+div.row.imageGallery div[class^="col"]{
+	background-size: contain;
+	background-position: center center;
+	height: 300px;
+}
+
+.opa{
+  opacity: 0.8;
+  color: white;
+  background: black;
+  padding-top: 50%;
+}
+
+.verticalAlign{
+  margin-top: 50px;
+}
+
+.marg{
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+
+/* ############ Margin Style ############## */
+@media only screen and (max-width:768px) {
+
+  div[class ^= col]:nth-child(1){
+    margin-top: 15px;
+  }
+
+  .verticalAlign{
+    margin-top: 25px;
+  }
+
+}
+
+@media only screen and (max-width:576px) {
+
+  .forPic{
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+
+}
+
+/* ############### Button Style ############# */
+@media only screen and (max-width: 992px) {
+
+  .margLeft{
+    margin-left: 35px;
+  }
+
+  .adjust{
+    margin-top: 15px;
+  }
+}
+
+.check{
+  background: grey;
+}
+
+/* ############### Button Style ############# */
+@media only screen and (min-width: 992px) {
+
+  button i {
+    align-content: center;
+  	transition : transform 0.5s;
+  }
+
+  button:hover i {
+  	transform: rotate(90deg);
+    margin-left: 20px;
+    transition : transform 0.5s;
+  }
+
+  .navText{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+  	font-weight: bold;
+  }
+
+  .navProfile{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: grey;
+  }
+
+}
+
+/* profile page style */
+h1, b.profile, span{
+  color: white;
+}
+
+div.profile div{
+  height: 45px;
+}
+
+div.profilePic{
+  background-size: contain;
+	background-position: center center;
+  border-radius: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white;
+}
+
+.friend-suggesting{
+  overflow-y: scroll;
+  height: 217.4px;
+  /* vertical-align: top; */
+  /* position: -webkit-sticky;
+  position: sticky;
+  top: 0; */
+}
+
+.commentPage{
+  overflow-y: scroll;
+  /* vertical-align: top; */
+  /* position: -webkit-sticky;
+  position: sticky;
+  top: 0; */
+}
+
+.alBut, .OalBut, .profBut, .addAlbum, .addImage{
+  cursor: pointer;
+}
+
+.footer{
+  /* background:#662e8c; */
+  /* margin-top:150px; */
+  height:300px;
+  color:white;
+  position:relative;
+  line-height:180%;
+  /* width: 100px; */
+  /* padding:0 10px; */
+}
